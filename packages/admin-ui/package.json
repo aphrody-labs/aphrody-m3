@@ -158,7 +158,6 @@
     "./app/admin/account/page": "./src/app/admin/account/page.tsx"
   },
   "dependencies": {
-    "@shenron/config": "workspace:*",
     "@shenron/ui": "workspace:*",
     "@tanstack/react-query": "catalog:",
     "@tiptap/react": "^3.31.3",
@@ -167,12 +166,12 @@
     "drizzle-orm": "catalog:",
     "lucide-react": "catalog:",
     "next": "catalog:",
-    "react": "catalog:"
+    "react": "catalog:",
+    "@aphrody/shenron-config": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "catalog:",
-    "@types/react-dom": "catalog:",
-    "typescript": "catalog:"
+    "@types/react-dom": "catalog:"
   },
   "peerDependencies": {
     "react-dom": "catalog:"

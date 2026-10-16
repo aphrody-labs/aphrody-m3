@@ -66,14 +66,14 @@
     "tailwind-merge": "catalog:"
   },
   "devDependencies": {
-    "@shenron/config": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "postcss": "8.5.28",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "tailwindcss": "catalog:"
+    "tailwindcss": "catalog:",
+    "@aphrody/shenron-config": "workspace:*"
   },
   "peerDependencies": {
     "react": "catalog:",

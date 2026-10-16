@@ -6,7 +6,7 @@ import {
 	checkNoEscapingImports,
 	checkPackageRuntimes,
 	listExportEntries,
-} from "@shenron/config/guards";
+} from "@aphrody/shenron-config/guards";
 
 const pkgDir = fileURLToPath(new URL("..", import.meta.url));
 const WRAPPERS = [
