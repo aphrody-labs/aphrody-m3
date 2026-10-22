@@ -5,6 +5,7 @@ export default m3Package({
     "index.ts",
     "transitions/index.ts",
     "adaptive/index.ts",
+    "video/index.ts",
     "state/index.ts",
     "adapters/tanstack.ts",
     "wrappers/*.ts",
