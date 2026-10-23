@@ -3,7 +3,7 @@
   position: relative;
   display: grid;
   background: #000;
-  color: var(--md-sys-color-inverse-on-surface, #fff);
+  color: #fff;
   border-radius: var(--md-sys-shape-corner-large, 16px);
   overflow: hidden;
   aspect-ratio: 16 / 9;

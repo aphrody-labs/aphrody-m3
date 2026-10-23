@@ -43,7 +43,8 @@ export interface M3VideoPlayerProps extends VideoPlayerOptions {
 export function M3VideoPlayer({ src, title, poster, captions, className, endScreen, ...options }: M3VideoPlayerProps) {
   const video = React.useRef<HTMLVideoElement>(null);
   const shell = React.useRef<HTMLDivElement>(null);
-  const rateButton = React.useRef<HTMLElement>(null);
+  // The wrapper does not forward `id`, so the menu anchors on a plain element that carries one.
+  const anchorId = `m3-video-rate-${React.useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
   const [menu, setMenu] = React.useState(false);
   const player = useVideoPlayer(video, shell, options);
   const duration = player.duration || 0;
@@ -127,10 +128,8 @@ export function M3VideoPlayer({ src, title, poster, captions, className, endScre
             {formatClock(player.time)} / {formatClock(duration)}
           </output>
           <span className="m3-video-spacer" />
-          <span className="m3-video-rate">
+          <span className="m3-video-rate" id={anchorId}>
             <MdIconButton
-              ref={rateButton as React.Ref<never>}
-              id="m3-video-rate-anchor"
               aria-label={`Vitesse de lecture : ${player.rate}×`}
               aria-haspopup="menu"
               aria-expanded={menu}
@@ -138,7 +137,7 @@ export function M3VideoPlayer({ src, title, poster, captions, className, endScre
             >
               <span aria-hidden="true">{player.rate}×</span>
             </MdIconButton>
-            <MdMenu anchor="m3-video-rate-anchor" open={menu} onClosed={() => setMenu(false)}>
+            <MdMenu anchor={anchorId} open={menu} onClosed={() => setMenu(false)}>
               {PLAYBACK_RATES.map(rate => (
                 <MdMenuItem
                   key={rate}
