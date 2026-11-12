@@ -145,5 +145,10 @@
   },
   "patchedDependencies": {
     "@ag-ui/core@1.0.1": "patches/ag-ui-core-1.0.1.patch"
+  },
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphrody-labs/aphrody-m3.git"
   }
 }

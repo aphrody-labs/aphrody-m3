@@ -24,5 +24,11 @@
   },
   "engines": {
     "bun": ">=1.4.2"
+  },
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphrody-labs/aphrody-m3.git",
+    "directory": "apps/web"
   }
 }

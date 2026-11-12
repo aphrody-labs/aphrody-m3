@@ -20,7 +20,7 @@
   "author": "aphrody-code",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aphrody-code/material-web.git",
+    "url": "git+https://github.com/aphrody-labs/aphrody-m3.git",
     "directory": "packages/eslint-plugin-m3"
   },
   "files": [

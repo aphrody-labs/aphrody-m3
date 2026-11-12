@@ -17,5 +17,11 @@
     "icons:sync": "bun scripts/sync-catalogue.ts",
     "icons:check": "bun scripts/sync-catalogue.ts --check",
     "icons:export": "bun scripts/export-theme.ts"
+  },
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphrody-labs/aphrody-m3.git",
+    "directory": "packages/material-design-icons"
   }
 }

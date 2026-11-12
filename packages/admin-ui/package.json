@@ -176,5 +176,10 @@
   },
   "peerDependencies": {
     "react-dom": "catalog:"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphrody-labs/aphrody-m3.git",
+    "directory": "packages/admin-ui"
   }
 }
