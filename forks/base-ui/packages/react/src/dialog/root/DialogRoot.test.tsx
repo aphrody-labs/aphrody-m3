@@ -2059,7 +2059,7 @@ describe('<Dialog.Root />', () => {
           },
         },
         {
-          name: 'Ariakit, via <html> overflow longhands',
+          name: 'Ariakit, via <html lang="en" dir="ltr"> overflow longhands',
           lock: () => {
             const { style } = document.documentElement;
             style.setProperty('scrollbar-gutter', 'stable');

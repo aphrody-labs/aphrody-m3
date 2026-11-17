@@ -37,7 +37,7 @@ export interface M3AppProps {
   reducedMotion?: "user" | "always" | "never";
   /** Size class used on the server and the first client render (default `compact`). */
   ssrSizeClass?: WindowSizeClass;
-  /** Element receiving the theme properties and `data-window-size-class` (default `<html>`). */
+  /** Element receiving the theme properties and `data-window-size-class` (default `<html lang="en" dir="ltr">`). */
   target?: HTMLElement;
 }
 

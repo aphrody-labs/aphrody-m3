@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Client boundary of @aphrody/m3-next (the build prepends the `'use client'` directive to dist/client.js; Bun keeps a
 // source directive after the hoisted imports, where Next rejects it): the theme provider. It carries only the mode (light, dark, system), the cookie
-// bridge to the server render and the class and `color-scheme` on <html>: a few hundred bytes. The Material You engine
+// bridge to the server render and the class and `color-scheme` on <html lang="en" dir="ltr">: a few hundred bytes. The Material You engine
 // (material-color-utilities, tens of KB) is imported on demand, and only when the seed, variant or contrast differ from
 // the scheme the server already inlined (M3Html does), so a typical page never downloads it.
 import {

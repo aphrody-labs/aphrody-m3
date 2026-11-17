@@ -228,7 +228,7 @@ export interface M3DocumentProps {
   cookieName?: string;
   /** Extra `<head>` children. */
   head?: ReactNode;
-  /** Extra attributes for `<html>`. */
+  /** Extra attributes for `<html lang="en" dir="ltr">`. */
   htmlProps?: Omit<HTMLAttributes<HTMLHtmlElement>, "className" | "lang" | "style" | "children">;
 }
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-// The light client provider: mode, cookie bridge, <html> classes, and the on-demand colour engine.
+// The light client provider: mode, cookie bridge, <html lang="en" dir="ltr"> classes, and the on-demand colour engine.
 import { afterEach, describe, expect, test } from "bun:test";
 import { renderToString } from "react-dom/server";
 import {

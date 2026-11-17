@@ -33,7 +33,7 @@ export const Route = createRootRoute({
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     // Use suppressHydrationWarning to avoid https://github.com/react/react/issues/24430
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning dir="ltr">
       <head>
         <HeadContent />
       </head>

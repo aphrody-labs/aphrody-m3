@@ -22,7 +22,7 @@ export const CHROME_THEMES: ThemeType[] = [
 
 /**
  * Provider thèmes Rose Griffon — wrap next-themes avec la liste explicite
- * des cinq thèmes supportés. La classe est appliquée sur `<html>`
+ * des cinq thèmes supportés. La classe est appliquée sur `<html lang="en" dir="ltr">`
  * (`class="roy"`, etc.) et `styles.css` aligne sur ces noms.
  */
 export function ThemeProvider({

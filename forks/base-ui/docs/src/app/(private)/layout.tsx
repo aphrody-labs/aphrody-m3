@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from 'next';
 export default function Layout({ children }: React.PropsWithChildren) {
   return (
     // Use suppressHydrationWarning to avoid https://github.com/react/react/issues/24430
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <body suppressHydrationWarning>{children}</body>
     </html>
   );
