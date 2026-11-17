@@ -16,10 +16,7 @@
 	sparse-script = packages/material-design-icons/scripts/sync-catalogue.ts
 [submodule "forks/fonts"]
 	path = forks/fonts
-	url = https://github.com/aphrody-labs/fonts.git
+	url = https://github.com/google/fonts.git
 	upstream = https://github.com/google/fonts.git
 	shallow = true
 	sparse = ofl/googlesansflex ofl/googlesanscode ofl/robotoflex ofl/robotomono ofl/notosansjp ofl/mplus1code
-[submodule "packages/m3-os-themes"]
-	path = packages/m3-os-themes
-	url = https://github.com/aphrody-labs/aphrody-m3-os-themes.git

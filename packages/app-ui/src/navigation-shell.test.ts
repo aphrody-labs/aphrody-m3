@@ -153,9 +153,9 @@ describe("Single Navigation & Shell Architecture (UI-DESIGN.md §3, §4.6, §10)
 
   it("chat store handles thread grouping into projects and unread indicators", () => {
     const mockThreads = [
-      { id: "1", name: "Thread UI 1", cwd: "C:/src/aphrody", createdAt: 1000 },
-      { id: "2", name: "Thread UI 2", cwd: "C:/src/aphrody", createdAt: 2000 },
-      { id: "3", name: "Thread Shenron 1", cwd: "C:/src/shenron", createdAt: 3000 },
+      { id: "1", name: "Thread UI 1", cwd: "/work/aphrody-app", createdAt: 1000 },
+      { id: "2", name: "Thread UI 2", cwd: "/work/aphrody-app", createdAt: 2000 },
+      { id: "3", name: "Thread Shenron 1", cwd: "/work/other-app", createdAt: 3000 },
     ];
 
     const groups = getProjectGroups(mockThreads, { aphrody: true });

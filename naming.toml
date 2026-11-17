@@ -1,0 +1,8 @@
+# Names of this repository, checked by the Aphrody naming scheme (aphrody-labs/.github, naming/NAMING.md).
+id = "aphrody-m3"
+kind = "design"
+org = "aphrody-labs"
+
+[legacy]
+# Published before the scheme: new packages use @aphrody/m3-<unit>.
+npm = ["@aphrody/"]

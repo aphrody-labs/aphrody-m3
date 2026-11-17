@@ -88,18 +88,6 @@
         "oxlint",
       ],
     },
-    "packages/identity": {
-      "name": "@aphrody/identity",
-      "version": "0.1.0",
-      "devDependencies": {
-        "@aphrody/m3": "workspace:*",
-        "@types/react": "catalog:",
-        "react": "catalog:",
-      },
-      "peerDependencies": {
-        "react": ">=18.0.0",
-      },
-    },
     "packages/m3": {
       "name": "@aphrody/m3",
       "version": "3.3.3",
@@ -277,7 +265,7 @@
       "name": "@aphrody/m3-mcp",
       "version": "1.0.0",
       "dependencies": {
-        "@aphrody/m3-os-themes": "workspace:*",
+        "@aphrody/m3-os-themes": "^1.4.7",
         "@aphrody/material-design-icons": "workspace:*",
         "@modelcontextprotocol/sdk": "^1.31.0",
         "zod": "^4.6.5",
@@ -375,21 +363,6 @@
         "@types/react": "catalog:",
         "@types/react-dom": "catalog:",
         "tailwindcss": "catalog:",
-        "typescript": "catalog:",
-      },
-    },
-    "packages/m3-os-themes": {
-      "name": "@aphrody/m3-os-themes",
-      "version": "1.4.5",
-      "bin": {
-        "m3-os-themes": "./src/cli.ts",
-      },
-      "dependencies": {
-        "@aphrody/m3-tokens": "workspace:*",
-      },
-      "devDependencies": {
-        "@aphrody/bun": "^3.3.0",
-        "@aphrody/m3-config": "workspace:*",
         "typescript": "catalog:",
       },
     },
@@ -613,8 +586,6 @@
 
     "@aphrody/eslint-plugin-m3": ["@aphrody/eslint-plugin-m3@workspace:packages/eslint-plugin-m3"],
 
-    "@aphrody/identity": ["@aphrody/identity@workspace:packages/identity"],
-
     "@aphrody/m3": ["@aphrody/m3@workspace:packages/m3"],
 
     "@aphrody/m3-ai": ["@aphrody/m3-ai@workspace:packages/m3-ai"],
@@ -651,7 +622,7 @@
 
     "@aphrody/m3-next-tauri-example": ["@aphrody/m3-next-tauri-example@workspace:packages/m3-next/examples/tauri"],
 
-    "@aphrody/m3-os-themes": ["@aphrody/m3-os-themes@workspace:packages/m3-os-themes"],
+    "@aphrody/m3-os-themes": ["@aphrody/m3-os-themes@1.4.7", "", { "dependencies": { "@aphrody/m3-tokens": "1.4.7" }, "bin": { "m3-os-themes": "src/cli.ts" } }, "sha512-l/guilRTmM1bobkl2sqHq3FCWYh5e07FyMmxCQfmeW0KlNsjD+0HmGC9w0f+D+E+qnXZGjbjvPh7leORbHZAmQ=="],
 
     "@aphrody/m3-primitives": ["@aphrody/m3-primitives@workspace:packages/m3-primitives"],
 
@@ -1928,6 +1899,8 @@
     "@aphrody/m3/@aphrody/material-web": ["@aphrody/material-web@file:forks/material-web", { "dependencies": { "@aphrody/bun": "3.3.0", "@aphrody/canvas": "1.0.9-aphrody.2", "@lit/context": "^1.1.6", "lit": "^3.3.3", "three": "^0.186.1", "tslib": "^2.8.1" }, "devDependencies": { "@aphrody/bun": "3.3.0", "@happy-dom/global-registrator": "^20.14.5", "@types/node": "26.6.3", "@types/three": "^0.186.0", "@typescript/native-preview": "^7.0.0-dev.20260707.2", "bun-types": "^1.4.2", "element-internals-polyfill": "^3.0.2", "sass-embedded": "^1.105.0", "sass-true": "^10.1.0", "typescript": "7.0.2" } }],
 
     "@aphrody/m3-front/@aphrody/material-web": ["@aphrody/material-web@file:forks/material-web", { "dependencies": { "@aphrody/bun": "3.3.0", "@aphrody/canvas": "1.0.9-aphrody.2", "@lit/context": "^1.1.6", "lit": "^3.3.3", "three": "^0.186.1", "tslib": "^2.8.1" }, "devDependencies": { "@aphrody/bun": "3.3.0", "@happy-dom/global-registrator": "^20.14.5", "@types/node": "26.6.3", "@types/three": "^0.186.0", "@typescript/native-preview": "^7.0.0-dev.20260707.2", "bun-types": "^1.4.2", "element-internals-polyfill": "^3.0.2", "sass-embedded": "^1.105.0", "sass-true": "^10.1.0", "typescript": "7.0.2" } }],
+
+    "@aphrody/m3-os-themes/@aphrody/m3-tokens": ["@aphrody/m3-tokens@1.4.7", "", { "dependencies": { "@material/material-color-utilities": "^0.4.0" } }, "sha512-F8+1GrrMWbwWjG74ZU7SIc7aPpAaRXzE4/e7XNg/+kYHasFnudDMB1uhYbQ4fwmITpPO/jsN45inujkuOS+J/w=="],
 
     "@aphrody/m3-react/@aphrody/material-web": ["@aphrody/material-web@file:forks/material-web", { "dependencies": { "@aphrody/bun": "3.3.0", "@aphrody/canvas": "1.0.9-aphrody.2", "@lit/context": "^1.1.6", "lit": "^3.3.3", "three": "^0.186.1", "tslib": "^2.8.1" }, "devDependencies": { "@aphrody/bun": "3.3.0", "@happy-dom/global-registrator": "^20.14.5", "@types/node": "26.6.3", "@types/three": "^0.186.0", "@typescript/native-preview": "^7.0.0-dev.20260707.2", "bun-types": "^1.4.2", "element-internals-polyfill": "^3.0.2", "sass-embedded": "^1.105.0", "sass-true": "^10.1.0", "typescript": "7.0.2" } }],
 

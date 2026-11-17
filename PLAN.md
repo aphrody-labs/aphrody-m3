@@ -11,7 +11,7 @@ remain authoritative for native runtime and installed hosts.
 
 | Surface                                                               | Owner                                                                                        |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Plugin, theme modules, Bun web build and `m3` CLI                     | `packages/m3`; OS theme implementation is the `aphrody-m3-os-themes` owner submodule         |
+| Plugin, theme modules, Bun web build and `m3` CLI                     | `packages/m3`; OS theme implementation is the published `@aphrody/m3-os-themes` package         |
 | App API/file server, executable compiler and deployment configuration | `packages/m3-bun`                                                                            |
 | Shared `Bun.build` preset and workspace build cache                   | `packages/m3-config`, `scripts/build.ts`                                                     |
 | Tokens and theme renderers                                            | `packages/m3-tokens` owns the Rust export adapter; Aphrody `crates/ui/m3-tokens` owns colors |
