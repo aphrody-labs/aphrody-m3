@@ -58,7 +58,7 @@
     "jiti": "^2.7.0",
     "lightningcss": "catalog:",
     "magic-string": "^1.1.0",
-    "source-map-js": "^1.2.1",
+    "source-map-js": "^1.2.2",
     "tailwindcss": "workspace:*"
   }
 }
